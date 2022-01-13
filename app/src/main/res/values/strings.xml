@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">OCR App</string>
+    <string name="slide_1">Welcome to OCR app</string>
+    <string name="slide_2">Scan your documents immediately from your device.</string>
+    <string name="slide_3">Zero wastage of time with 90% scanning accuracy.</string>
+    <string name="help_text">This is the home tab which tells you about all the recent files used by the app.</string>
+</resources>

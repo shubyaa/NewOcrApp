@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue_dark"
+    android:paddingTop="@dimen/_10sdp"
+    tools:context=".HomeActivity">
+
+    <LinearLayout
+        android:id="@+id/nav_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:overScrollMode="never">
+
+        <ImageButton
+            android:id="@+id/search_button"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:background="@drawable/search"
+            android:contentDescription="search" />
+
+        <SearchView
+            android:paddingVertical="@dimen/_3sdp"
+            android:id="@+id/search_bar"
+            android:layout_width="@dimen/_220sdp"
+            android:layout_height="@dimen/_26sdp"
+            android:layout_marginHorizontal="@dimen/_5sdp"
+            android:background="@drawable/search_bar"
+            android:iconifiedByDefault="false"
+            android:inputType="text"
+            android:searchIcon="@color/trans"
+            app:iconifiedByDefault="false"
+            app:searchIcon="@null" />
+
+        <ImageButton
+            android:id="@+id/help"
+            android:layout_width="@dimen/_22sdp"
+            android:layout_height="@dimen/_22sdp"
+            android:layout_marginTop="-1dp"
+            android:background="@drawable/help"
+            android:clickable="true"
+            android:focusable="true" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="wrap_content"
+        android:layout_height="2dp"
+        android:layout_below="@+id/nav_bar"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:layout_marginVertical="@dimen/_15sdp"
+        android:background="@color/off_white" />
+
+    <TextView
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:fontFamily="@raw/opensans_variablefont_wdth"
+        android:text="All Documents"
+        android:textColor="@color/off_white"
+        android:textSize="@dimen/_30sdp"
+        android:textStyle="bold" />
+
+    <HorizontalScrollView
+        android:id="@+id/horizontal_opt"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_below="@+id/head"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:orientation="horizontal"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:textAlignment="center">
+
+            <TextView
+                android:id="@+id/last_scan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+                android:fontFamily="sans-serif-light"
+                android:paddingHorizontal="@dimen/_5sdp"
+                android:text="Last Scan"
+                android:textColor="@color/off_white"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/atoz"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+                android:fontFamily="sans-serif-light"
+                android:paddingHorizontal="@dimen/_5sdp"
+                android:text="A to Z"
+                android:textColor="@color/off_white"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/ztoa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+                android:fontFamily="sans-serif-light"
+                android:paddingHorizontal="@dimen/_5sdp"
+                android:text="Z to A"
+                android:textColor="@color/off_white"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/bydate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+                android:fontFamily="sans-serif-light"
+                android:paddingHorizontal="@dimen/_5sdp"
+                android:text="Sort by date"
+                android:textColor="@color/off_white"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/bysize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+                android:fontFamily="sans-serif-light"
+                android:paddingHorizontal="@dimen/_5sdp"
+                android:text="Sort by size"
+                android:textColor="@color/off_white"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="normal" />
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/empty_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_nav"
+        android:layout_below="@+id/horizontal_opt"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:layout_marginVertical="@dimen/_8sdp"
+        android:fontFamily="@raw/opensans_variablefont_wdth"
+        android:gravity="center"
+        android:text="Nothing to display"
+        android:textColor="@color/off_white"
+        android:textSize="@dimen/_15sdp"
+        android:visibility="gone" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/item_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/horizontal_opt"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:layout_marginVertical="@dimen/_8sdp"
+        android:orientation="vertical" />
+
+
+    <RelativeLayout
+        android:id="@+id/bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_70sdp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/capsule_shape"
+        android:gravity="bottom"
+        android:paddingHorizontal="@dimen/_25sdp"
+        android:paddingBottom="@dimen/_15sdp">
+
+        <ImageButton
+            android:id="@+id/add_folder"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/add_folder"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <ImageButton
+            android:id="@+id/github_icon"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/github_icon"
+            android:clickable="true"
+            android:focusable="true" />
+
+
+    </RelativeLayout>
+
+
+    <ImageButton
+        android:id="@+id/add"
+        android:layout_width="@dimen/_65sdp"
+        android:layout_height="@dimen/_65sdp"
+        android:layout_above="@+id/bottom_nav"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-40dp"
+        android:background="@drawable/light_circle"
+        android:clickable="true"
+        android:contentDescription="add"
+        android:elevation="@dimen/_8sdp"
+        android:focusable="false"
+        android:foreground="@drawable/add_icon"
+        android:padding="@dimen/_20sdp" />
+
+
+</RelativeLayout>

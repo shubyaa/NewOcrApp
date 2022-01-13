@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue_dark"
+    tools:context=".StartActivity">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/pages"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_580sdp" />
+
+    <RelativeLayout
+        android:id="@+id/dots"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pages"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:paddingHorizontal="@dimen/_5sdp"
+        android:textAlignment="center">
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@color/trans"
+            android:text="Back"
+            android:textColor="@color/off_white"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@color/trans"
+            android:text="Next"
+            android:textColor="@color/off_white" />
+
+        <Button
+            android:id="@+id/finish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@color/trans"
+            android:text="Finish"
+            android:textColor="@color/off_white"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
