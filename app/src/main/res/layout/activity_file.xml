@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/blue_dark"
+    android:paddingBottom="@dimen/_8sdp"
     android:paddingTop="@dimen/_10sdp"
     tools:context=".FileActivity">
 
@@ -117,7 +118,7 @@
     <EditText
         android:id="@+id/extracted_text"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/_120sdp"
+        android:layout_height="@dimen/_110sdp"
         android:layout_below="@+id/text"
         android:layout_marginHorizontal="@dimen/_15sdp"
         android:layout_marginTop="@dimen/_5sdp"
@@ -158,7 +159,6 @@
             android:backgroundTint="#5584AC"
             android:elevation="@dimen/_5sdp"
             android:text="Copy Text"
-
             android:textAllCaps="false"
             android:textColor="@color/off_white"
             android:textSize="@dimen/_10sdp" />
@@ -171,7 +171,6 @@
             android:backgroundTint="#5584AC"
             android:elevation="@dimen/_5sdp"
             android:text="Save"
-
             android:textAllCaps="false"
             android:textColor="@color/off_white"
             android:textSize="@dimen/_10sdp" />
