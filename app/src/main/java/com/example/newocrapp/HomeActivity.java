@@ -123,8 +123,6 @@ public class HomeActivity extends AppCompatActivity {
                                     }
                                 });
                                 adapter.notifyDataSetChanged();
-                            } else {
-                                Toast.makeText(HomeActivity.this, "Not Found", Toast.LENGTH_SHORT).show();
                             }
                         }
                     } else {
@@ -153,9 +151,7 @@ public class HomeActivity extends AppCompatActivity {
 
 
                                 adapter.notifyDataSetChanged();
-                            } else {
-                                Toast.makeText(HomeActivity.this, "Not Found", Toast.LENGTH_SHORT).show();
-                            }
+                            } 
                         }
                     } else {
 
