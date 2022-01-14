@@ -110,8 +110,7 @@ FirebaseVisionImage image = FirebaseVisionImage.fromBitmap(bitmap);
 
 ## Screenshots
 
-<img src="https://github.com/shubyaa/NewOcrApp/blob/master/output/1.jpg" alt="Screenshot 1" width="200"/>
-<img src="https://github.com/shubyaa/NewOcrApp/blob/master/output/2.jpg" alt="Screenshot 2" width="200"/>
+<img src="https://github.com/shubyaa/NewOcrApp/blob/master/output/1.jpg" alt="Screenshot 1" width="200"/> <img src="https://github.com/shubyaa/NewOcrApp/blob/master/output/2.jpg" alt="Screenshot 2" width="200"/>
 
 <img src="https://github.com/shubyaa/NewOcrApp/blob/master/output/3.jpg" alt="Screenshot 3" width="200"/>
 
