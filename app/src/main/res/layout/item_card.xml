@@ -28,7 +28,7 @@
                 android:layout_gravity="center"
                 android:adjustViewBounds="true"
                 android:contentDescription="DocLogo"
-                android:src="@drawable/common_google_signin_btn_icon_dark" />
+                android:src="@color/trans" />
 
         </androidx.cardview.widget.CardView>
 
