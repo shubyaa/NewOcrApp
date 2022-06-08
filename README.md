@@ -1,5 +1,5 @@
 
-# Travel Lust Website using Django
+# Android OCR App
 
 A Travel Agency website developed using Python Django and MySQL Database.
 
