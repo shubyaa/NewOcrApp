@@ -1,7 +1,6 @@
 
 # Android OCR App
 
-A Travel Agency website developed using Python Django and MySQL Database.
 
 <img src="https://github.com/shubyaa/NewOcrApp/blob/master/app/src/main/res/drawable/logo.png" alt="Logo" width="100"/>
 
